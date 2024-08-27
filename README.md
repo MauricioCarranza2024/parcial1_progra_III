@@ -1,6 +1,9 @@
 '''''Comentarios de solucion de Parcial 1'''''
+
 Este pacial Fue desarollado por:
+
 --Erick Josué Chávez Moraga (SMTR152021)
+
 ---Mauricio Alfredo Carranza Velazques (SMTR059023)
 
 En este caso dimos solucion a cada ejercio que nos precento y asi mismo pudimos analizar la funcion que dimos a cada uno 
