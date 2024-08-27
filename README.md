@@ -22,3 +22,9 @@ y asi mismo le permite al director la informacion del docente y su asistencia co
 en caso de inacistencia al igual con los estudiantes les muestra su imformacion como su codigo 
 su asistencia y su falta...
 
+
+'''Ejercicio 3'''
+En este programa yo fui simulando un proceso en el que un cliente elige una habitación en un hotel, selecciona servicios adicionales y luego recibe una factura detallada. y tambien utilice la programación orientada a objetos para organizar la información y operaciones relacionadas con habitaciones, clientes y servicios adicionales, y para calcular el costo total de la estancia. Cuando se ejecuta el codigo nos pide que ingresemos los datos 
+
+'''Ejercicio 4'''
+En este ultimo ejercicio hice que permitiera gestionar empleados de dos tipos diferentes en una empresa, aquellos con plaza fija y aquellos que trabajan por horas. Tambien me base por utilizar la programación orientada a objetos para definir la estructura para hacerla mas entendible y específica de cada tipo de empleado y calcular su pago. La clase Empresa gestiona la lista de empleados y genera la planilla de pago, la función principal permite interactuar con el usuario para ingresar datos y mostrar resultados, al final nos da la factura con la informacion de cada cosa que pidio el usuario.
