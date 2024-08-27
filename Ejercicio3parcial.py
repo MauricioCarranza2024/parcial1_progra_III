@@ -11,29 +11,29 @@ como el uso de la piscina o la cancha de golf, que tienen un costo
 adicional. Implementa esta funcionalidad en tu programa.
 """
 
-# Clase que representa una habitación del hotel
+# esta clase es la que representa una habitación del hotel
 class Habitacion:
     def __init__(self, tipo, precio):
         self.tipo = tipo
         self.precio = precio
 
-# Clase que representa a un cliente con sus datos personales y servicios extras seleccionados
+# esta clase es la que representa a un cliente con sus datos personales y servicios extras seleccionados
 class Cliente:
     def __init__(self, nombre, apellido, tel, noches):
         self.nombre = nombre
         self.apellido = apellido
         self.tel = tel
         self.noches = noches
-        self.servicios_extras = []  # Lista para almacenar los servicios extras seleccionados por el cliente
-        self.costo_total = 0  # Costo total que se calculará más adelante
+        self.servicios_extras = []  # esta lista la hice para almacenar los servicios extras seleccionados por el cliente
+        self.costo_total = 0  # y aqui es donde se calculan el costo total que se calculará más adelante
 
-# Clase que representa un servicio extra del hotel
+# esta clase es la que representa un servicio extra del hotel
 class ServicioExtra:
     def __init__(self, nombre, precio):
         self.nombre = nombre
         self.precio = precio
 
-# Clase que representa el hotel y contiene la lógica para manejar habitaciones y servicios extras
+# esta clase es la que representa el hotel y contiene la lógica para manejar habitaciones y servicios extras
 class Hotel:
     def __init__(self):
         self.habitaciones = [
@@ -78,9 +78,9 @@ class Hotel:
         print(f"Total a pagar: ${cliente.costo_total}")
         print("------------------------------------------------\n")
 
-# Función principal que ejecuta el flujo del programa
+# esta funcion es la  principal para que ejecute el flujo del programa
 def main():
-    hotel = Hotel()  # Crea una instancia del hotel
+    hotel = Hotel() 
     
     hotel.mostrar_habitaciones()
     
@@ -92,7 +92,7 @@ def main():
     tel = input("Ingrese su numero de telefono: ")
     noches = int(input("Ingrese el número de noches que permanecerá en el hotel: "))
 
-    cliente = Cliente(nombre, apellido, tel, noches)  # Crea una instancia del cliente
+    cliente = Cliente(nombre, apellido, tel, noches) 
 
     hotel.mostrar_servicios_extras()
 
@@ -107,6 +107,6 @@ def main():
 
     hotel.generar_factura(cliente, habitacion_elegida)
 
-# Punto de entrada del programa
+
 if __name__ == "__main__":
     main()
