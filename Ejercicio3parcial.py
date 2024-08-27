@@ -36,7 +36,6 @@ class ServicioExtra:
 # Clase que representa el hotel y contiene la lógica para manejar habitaciones y servicios extras
 class Hotel:
     def __init__(self):
-        # Inicializa las habitaciones y servicios extras disponibles en el hotel
         self.habitaciones = [
             Habitacion("Estándar", 50),
             Habitacion("Suite", 100),
@@ -47,19 +46,19 @@ class Hotel:
             ServicioExtra("Cancha de Golf", 50)
         ]
 
-    # Método para mostrar las habitaciones disponibles
+    # este metodo para mostrar las habitaciones disponibles
     def mostrar_habitaciones(self):
         print("Opciones de habitaciones disponibles:")
         for idx, habitacion in enumerate(self.habitaciones):
             print(f"{idx + 1}. {habitacion.tipo} - ${habitacion.precio} por noche")
 
-    # Método para mostrar los servicios extras disponibles
+    # este metodo para mostrar los servicios extras disponibles
     def mostrar_servicios_extras(self):
         print("Opciones de servicios extra disponibles:")
         for idx, servicio in enumerate(self.servicios_extras):
             print(f"{idx + 1}. {servicio.nombre} - ${servicio.precio}")
 
-    # Método para generar y mostrar la factura detallada para el cliente
+    # este metodo es para generar y mostrar la factura detallada para el cliente
     def generar_factura(self, cliente, habitacion):
         costo_habitacion = habitacion.precio * cliente.noches
         costo_servicios = sum(servicio.precio for servicio in cliente.servicios_extras)
