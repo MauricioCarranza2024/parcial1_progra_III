@@ -7,7 +7,7 @@ se les paga en función de la cantidad de horas trabajadas.
 Adicionalmente, si un empleado ha laborado más de 5 años, sin importar su tipo de contrato, se le otorga un bono adicional.
 """
 
-# en esta primer clase es la que representa un empleado generico
+#en esta primer clase es la que representa un empleado generico
 class Empleado:
     def __init__(self, nombre, años_trabajados):
         self.nombre = nombre
@@ -19,7 +19,7 @@ class Empleado:
     def calcular_pago(self):
         pass
 
-# esta clase es la que representa a un empleado con plaza fija
+#esta clase es la que representa a un empleado con plaza fija
 class EmpleadoPlazaFija(Empleado):
     def __init__(self, nombre, años_trabajados, salario_base, comisiones):
         super().__init__(nombre, años_trabajados)
@@ -30,7 +30,7 @@ class EmpleadoPlazaFija(Empleado):
         salario_total = self.salario_base + self.comisiones + self.calcular_bono()
         return salario_total
 
-# esta clase es la que representa a un empleado que trabaja por horas
+#esta clase es la que representa a un empleado que trabaja por horas
 class EmpleadoPorHoras(Empleado):
     def __init__(self, nombre, años_trabajados, horas_trabajadas, tarifa_por_hora):
         super().__init__(nombre, años_trabajados)
@@ -41,7 +41,7 @@ class EmpleadoPorHoras(Empleado):
         salario_total = (self.horas_trabajadas * self.tarifa_por_hora) + self.calcular_bono()
         return salario_total
 
-# esta clase la hago para gestionar la planilla de empleados y tambien hice una para almacenar los empleados
+#esta clase la hago para gestionar la planilla de empleados y tambien hice una para almacenar los empleados
 class Empresa:
     def __init__(self):
         self.empleados = []  
@@ -55,7 +55,7 @@ class Empresa:
             pago = empleado.calcular_pago()
             print(f"Empleado: {empleado.nombre}, Pago Total: ${pago:.2f}")
 
-# en esta funcion es la principal que hace que se ejecute el programa
+#en esta funcion es la principal que hace que se ejecute el programa
 def main():
     empresa = Empresa()  
     while True:
@@ -79,7 +79,7 @@ def main():
             print("Tipo de empleado no válido. Intente nuevamente.")
             continue
 
-        # aqui agregue el empleado a lista
+        #aqui agregue el empleado a lista
         empresa.agregar_empleado(empleado)  
         continuar = input("¿Desea agregar otro empleado? (s/n): ").lower()
         if continuar != 's':
