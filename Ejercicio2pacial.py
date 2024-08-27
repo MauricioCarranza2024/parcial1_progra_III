@@ -58,7 +58,7 @@ class Docente:
         print(f"Registro de asistencia del docente {self.nombre}:")
         for estudiante in self.estudiantes.values():
             estudiante.mostrar_asistencia()
-            
+
 #Clase de director
 class Director:
     def __init__(self):
@@ -102,8 +102,8 @@ if __name__ == "__main__":
     main()
 
 #-----COMENTARIO Y EXPLICACION DE SOLUCION-----
-#En este codigo realizamos un programma con POO YA QUE LLEVA CLASS , ESTUDIANTE,DOCENTE,DIRECTOR Y DE REGISTRO Y ASISTENCIA
+#En este codigo realizamos un programma con POO ya que lleva CLASS , ESTUDIANTE,DOCENTE,DIRECTOR Y DE REGISTRO Y ASISTENCIA
 #este codigo le perimite al colegio llevar un resgrito de los estudantes y docentes de forma ordenada 
-#t asi mismo le permite al dfirector la informacion del docente y su asistencia como asi mismo una explicacion 
-# en ecaso de inacistencia al igual con los estudiantes les muestra su imformacion como su codigo 
-# su asistencia y su falata...
+#t asi mismo le permite al director la informacion del docente y su asistencia como asi mismo una explicacion 
+# en caso de inacistencia al igual con los estudiantes les muestra su imformacion como su codigo 
+# su asistencia y su falta...
