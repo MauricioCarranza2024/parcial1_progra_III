@@ -18,7 +18,7 @@ porque las funciones y datos estan separados...
 '''Ejercicio 2'''
 En este codigo realizamos un programma con POO ya que lleva CLASS , ESTUDIANTE,DOCENTE,DIRECTOR Y DE REGISTRO Y ASISTENCIA
 este codigo le perimite al colegio llevar un resgrito de los estudantes y docentes de forma ordenada 
-y asi mismo le permite al dfirector la informacion del docente y su asistencia como asi mismo una explicacion 
-en ecaso de inacistencia al igual con los estudiantes les muestra su imformacion como su codigo 
+y asi mismo le permite al director la informacion del docente y su asistencia como asi mismo una explicacion 
+en caso de inacistencia al igual con los estudiantes les muestra su imformacion como su codigo 
 su asistencia y su falta...
 
